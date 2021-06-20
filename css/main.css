@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+
+}
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #689CFF;
+    border-radius: 4px;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #689CFF;
+}
+header .header-icons-container .items{
+    width: 220px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .header-icons-container .items a span{
+    color: #e5e5e5;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #e5e5e5;
+
+}
+nav .nav-logo-container img{
+    width: 190px;
+    margin-left: 50px;
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+header nav .profile-link a{
+    text-decoration: none;
+}
+nav .profile-link span:hover a{
+    color: #689CFF;
+}
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid;
+}
+main{
+    background-image: url('https://images.pexels.com/photos/955402/pexels-photo-955402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    color: white;
+    padding-top: 90px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+main div button{
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: #689CFF;
+    border: none;
+    border-radius: 20px;
+    padding-top: 0;
+    font-family: 'Girassol' , cursive;
+    font-size: 16px;
+}
+main div:hover button{
+    background-color: #e5e5e5;
+    color: #689CFF;
+    border: 3px solid #689cff;
+    cursor: pointer;
+}
